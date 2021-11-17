@@ -1,2 +1,2 @@
-# rapidscale
+# RapidScale
 Rapid Scale Website
