@@ -2,61 +2,80 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Dummy Page</title>
-    <meta name="description" content="Simple, quick, standalone responsive placeholder Website without any additional resources">
-    <meta name="author" content="https://gist.github.com/oliveratgithub">
+    <title>Rapid Scale</title>
+    <meta name="description" content="Rapid Scale Investments: Speed, Expertise and Capital">
+    <meta name="author" content="https://github.com/isaacdlp">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/pure-min.css">
     <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <script src="./scripts/html5shiv.js"></script>
     <![endif]-->
     <!--[if lte IE 8]>
-    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css">
+    <link rel="stylesheet" href="./styles/grids-responsive-old-ie-min.css">
     <![endif]-->
     <!--[if gt IE 8]><!-->
-    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+    <link rel="stylesheet" href="./styles/grids-responsive-min.css">
     <!--<![endif]-->
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
+    <link rel="stylesheet" href="./styles/font-awesome.min.css">
+    <script src="./scripts/jquery-2.2.4.min.js"></script>
+    <script src="./scripts/jquery.backstretch.min.js"></script>
     <style>
         body {
+            background-color: #000;
+        }
+        html, body, #wrapper {
             line-height: 1.7em;
             color: #000;
-            background-color: #ddd;
-            font-family: "Helvetica Neue", helvetica, arial, sans-serif;
-            text-shadow: 1px 1px 16px rgba(255, 255, 255, 0.8);
+            font-family: "Open Sans", "Helvetica Neue", helvetica, arial, sans-serif;
             font-size: 34px;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            border: none;
             text-align: center;
-            margin-top: 100px;
         }
-        h1, h2, h3, h4, h5, h6, label { color: #fff; }
+        a, a:visited {
+            color: #fff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        #wrapper {
+            margin: 0 auto;
+            vertical-align: middle;
+            width: 100%;
+        }
+        #rocket {
+            vertical-align: text-bottom;
+        }
+        h1, h2, h3, h4, h5, h6, label {
+            font-family: "Open Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+            color: #fff;
+        }
         h1 { text-transform: uppercase; }
-        #countdown { line-height: 1.1em; }
+        .backstretch {
+            filter: brightness(60%);
+        }
     </style>
 </head>
 
 <body>
+<table id="wrapper">
 <div class="pure-g">
+    <tr><td>
     <div class="pure-u-1">
-        <h1>Rapid Scale</h1>
+        <h1>Rapid <img id="rocket" src="./images/rocket.png" /> Scale</h1>
         <h3>Speed &bull; Expertise &bull; Capital</h3>
-        <h4>info@rapidscale.vc</h4>
+        <h5><a href="mailto:info@rapidscale.vc">info@rapidscale.vc</a></h5>
     </div>
+    </td></tr>
 </div>
+</table>
 </body>
 <script>
-    /*
-     * Here is an example of how to use Backstretch as a slideshow.
-     * Just pass in an array of images, and optionally a duration and fade value.
-     *
-     * INFO: Duration is the amount of time in between slides,
-     * INFO: and fade is value that determines how quickly the next image will fade in
-     */
     $.backstretch([
-        "https://unsplash.it/g/1600?image=1041"
-        , "https://unsplash.it/g/1600?image=1042"
-        , "https://unsplash.it/g/1600?image=1045"
+        "./images/slide-01.jpg", "./images/slide-02.jpg", "./images/slide-03.jpg"
     ], {duration: 3000, fade: 750});
 </script>
 </html>
