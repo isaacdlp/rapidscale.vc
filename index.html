@@ -57,6 +57,18 @@
         .backstretch {
             filter: brightness(60%);
         }
+
+        @media screen and (max-width: 600px) {
+            #pre_rocket {
+                display: block;
+            }
+            h3 {
+                font-size: 25px;
+            }
+            h5 {
+                font-size: 20px;
+            }
+        }
     </style>
 </head>
 
@@ -65,7 +77,7 @@
 <div class="pure-g">
     <tr><td>
     <div class="pure-u-1">
-        <h1>Rapid <img id="rocket" src="./images/rocket.png" /> Scale</h1>
+        <h1>Rapid <span id="pre_rocket"><img id="rocket" src="./images/rocket.png" /></span> Scale</h1>
         <h3>Speed &bull; Expertise &bull; Capital</h3>
         <h5><a href="mailto:info@rapidscale.vc">info@rapidscale.vc</a></h5>
     </div>
