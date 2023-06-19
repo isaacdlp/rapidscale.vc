@@ -2988,10 +2988,10 @@ a.bg-warn:focus, a.bg-success:hover, button.bg-success:focus, button.bg-success:
 
 #form-messages {
     display: none;
-    margin: 40px auto 40px auto;
+    margin: 40px auto 40px auto !important;
     max-width: 500px;
     padding: 15px;
-    border-radius: 10px;
+    border-radius: 25px;
     color: white;
     text-align: center;
 }
