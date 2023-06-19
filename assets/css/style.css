@@ -578,7 +578,7 @@ img {
 }
 
 .bg-overlay::after {
-    opacity: 0.95;
+    opacity: 0.75;
     z-index: -1;
 }
 
@@ -2959,4 +2959,39 @@ body.dark,
 .rtl .bg-overlay::after,
 .rtl .grad-hover::before {
     background: linear-gradient(135deg, #E0040B 0%, #fc5130 100%);
+}
+
+
+.bg-danger {
+    background-color: #dc3545 !important
+}
+
+a.bg-danger:focus, a.bg-danger:hover, button.bg-danger:focus, button.bg-danger:hover {
+    background-color: #bd2130 !important
+}
+
+.bg-success {
+    background-color: #28a745 !important
+}
+
+a.bg-success:focus, a.bg-success:hover, button.bg-success:focus, button.bg-success:hover {
+    background-color: #1e7e34 !important
+}
+
+.bg-warn {
+    background-color: #f3c56b !important
+}
+
+a.bg-warn:focus, a.bg-success:hover, button.bg-success:focus, button.bg-success:hover {
+    background-color: #e7bb66 !important
+}
+
+#form-messages {
+    display: none;
+    margin: 40px auto 40px auto;
+    max-width: 500px;
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
 }
