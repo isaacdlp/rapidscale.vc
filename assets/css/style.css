@@ -591,7 +591,7 @@ img {
 
 /*BACKGROUND COLORS*/
 .color-1 {
-    color: #be63f9;
+    color: #5f06ee;
 }
 
 .color-2 {
@@ -616,7 +616,7 @@ img {
 
 .color-1.bg-hover:hover::after,
 .color-1.bg-hover.active::after {
-    background-color: #be63f9;
+    background-color: #5f06ee;
 }
 
 .color-2.bg-hover:hover::after,
