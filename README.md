@@ -1,2 +1,3 @@
 # RapidScale
-Rapid Scale Website
+
+[Rapid Scale](https://rapidscale.vc) Website
