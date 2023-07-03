@@ -26,7 +26,7 @@
 
 </head>
 
-<body class="homepage-4">
+<body class="homepage-4 eupopup eupopup-bottom eupopup-color-inverse">
     <!--====== Preloader Area Start ======-->
     <div id="preloader">
         <!-- Digimax Preloader -->
@@ -605,7 +605,7 @@
         <!--====== Footer Area Start ======-->
         <footer class="section footer-area">
             <!-- Footer Top -->
-            <!--<div class="footer-top ptb_100">
+<!--            <div class="footer-top ptb_100">
                 <div class="container">
                     <div class="row">
                         <div class="col-12 col-sm-6 col-lg-3">
@@ -642,11 +642,9 @@
                                 &lt;!&ndash; Footer Title &ndash;&gt;
                                 <h3 class="footer-title text-uppercase mb-2">Support</h3>
                                 <ul>
-                                    <li class="py-2"><a class="text-black-50" href="#">Frequently Asked</a></li>
-                                    <li class="py-2"><a class="text-black-50" href="#">Terms &amp; Conditions</a></li>
                                     <li class="py-2"><a class="text-black-50" href="#">Privacy Policy</a></li>
-                                    <li class="py-2"><a class="text-black-50" href="#">Help Center</a></li>
-                                    <li class="py-2"><a class="text-black-50" href="#">Contact Us</a></li>
+                                    <li class="py-2"><a class="text-black-50" href="#">Terms &amp; Conditions</a></li>
+                                    <li class="py-2"><a class="text-black-50" href="#">Cookie Policy</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -669,6 +667,14 @@
                     </div>
                 </div>
             </div>-->
+
+            <div class="section-heading text-center">
+                <p>
+                    <a class="service-btn" href="legal/privacy_policy.html">Privacy Policy</a> &bull;
+                    <a class="service-btn" href="legal/terms_service.html">Terms of Service</a> &bull;
+                    <a class="service-btn" href="legal/cookie_policy.html">Cookie Policy</a>
+                </p>
+            </div>
 
             <!-- Footer Bottom -->
             <div class="footer-bottom bg-grey">
@@ -773,6 +779,24 @@
 
     <!-- Mailchimp pop-up form -->
     <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/3d32713e1eb9aa77d0c48999d/f82d8ccbad7903e3abc4e3236.js");</script>
+
+    <!-- Cookies banner -->
+
+    <link rel="stylesheet" type="text/css" href="assets/css/jquery-eu-cookie-law-popup.css"/>
+    <script src="assets/js/jquery-eu-cookie-law-popup.js"></script>
+    <script>
+        $(document).ready( function() {
+            if ($(".eupopup").length > 0) {
+                $(document).euCookieLawPopup().init({
+                    'popupTitle' : '',
+                    'popupText' : 'We use <b>cookies</b> to ensure that we give you the best experience on our website. If you continue without changing your settings, we\'ll assume that you are ok with it.',
+                    'buttonContinueTitle' : 'Accept',
+                    'buttonLearnmoreTitle' : 'Cookie Policy',
+                    'cookiePolicyUrl' : 'legal/cookie_policy.html'
+                });
+            }
+        });
+    </script>
 
 </body>
 
