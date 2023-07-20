@@ -12226,14 +12226,6 @@ img.rounded-circle {
   background: url("./logo.png") center;
 }
 
-.rc-mainline::before {
-  content: "Welcome to Rapid Scale"
-}
-
-.rc-tagline::before {
-  content: "Speed, Expertise and Capital"
-}
-
 .rc-marketing {
   display: none;
 }
