@@ -603,7 +603,7 @@ img {
 }
 
 .color-4 {
-    color: #34FF92;
+    color: #006931;
 }
 
 .color-5 {
@@ -631,7 +631,7 @@ img {
 
 .color-4.bg-hover:hover::after,
 .color-4.bg-hover.active::after {
-    background-color: #34FF92;
+    background-color: #006931;
 }
 
 .color-5.bg-hover:hover::after,
@@ -1399,7 +1399,7 @@ header {
 .homepage-3 .btn.btn-bordered-white::after,
 .homepage-3 .bg-overlay::after,
 .homepage-3 .grad-hover::before {
-    background: linear-gradient(135deg, #10054d 0%, #45108a 100%);
+    background: linear-gradient(135deg, #4f4d4d 0%, #000000 0%);
 }
 
 .homepage-3 .play-icon {
@@ -1447,6 +1447,24 @@ header {
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
+}
+
+.homepage-3 .bg-overlay::after {
+    opacity: 0.25;
+    z-index: -1;
+}
+
+.cta-area {
+    background: rgba(0, 0, 0, 0) url("../img/bg/cta_bg_1.jpg") no-repeat fixed center center / cover;
+}
+
+a:hover,
+a:focus {
+    color: #006931;
+}
+
+.service-btn::after {
+    background-color: #006931;
 }
 
 /* ******************************
