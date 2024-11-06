@@ -122,3 +122,15 @@ body .eupopup-style-compact .eupopup-buttons {
 body .eupopup-style-compact .eupopup-button {
 	margin: 0 5px;
 }
+
+.eupopup-color-carbon .eupopup-button_1, .eupopup-color-carbon .eupopup-button_2 {
+	color: #006931;
+}
+
+.eupopup-color-carbon .eupopup-body {
+	color: #000000;
+}
+
+.eupopup-color-carbon {
+	background-color: rgba(213, 213, 213, 0.6) !important;
+}
