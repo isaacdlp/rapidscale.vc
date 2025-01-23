@@ -1455,6 +1455,10 @@ header {
 }
 
 .cta-area {
+    background: rgba(0, 0, 0, 0) url("../img/bg/cta_bg.jpg") no-repeat fixed center center / cover;
+}
+
+.carbon-area {
     background: rgba(0, 0, 0, 0) url("../img/bg/cta_bg_1.jpg") no-repeat fixed center center / cover;
 }
 
