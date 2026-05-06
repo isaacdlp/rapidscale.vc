@@ -24,6 +24,18 @@
     <!-- Responsive css -->
     <link rel="stylesheet" href="assets/css/responsive.css">
 
+    <style>
+        .hero-video-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -2;
+        }
+    </style>
+
 </head>
 
 <body class="homepage-4 eupopup eupopup-bottom eupopup-color-inverse">
@@ -150,17 +162,20 @@
         <!-- ***** Header End ***** -->
 
         <!-- ***** Welcome Area Start ***** -->
-        <section id="home" class="section welcome-area bg-overlay overflow-hidden d-flex align-items-center">
+        <section id="home" class="section welcome-area bg-overlay overflow-hidden d-flex align-items-center" style="background: none;">
+            <video autoplay muted loop playsinline class="hero-video-bg">
+                <source src="assets/video/hero.mp4" type="video/mp4">
+            </video>
             <div class="container">
                 <div class="row justify-content-center align-items-center">
                     <!-- Welcome Intro Start -->
                     <div class="col-12 col-md-10"><
                         <div class="welcome-intro text-center mt-0 py<-5">
-                            <img src="assets/img/logo/logo-rocket-white.png" style="padding-bottom:20px;"/>
-                            <h1 class="text-white">Innovation 4 Good</h1>
-                            <p class="text-white my-4" style="display: inline-block; max-width: 750px;">A technology investment firm committed to <b>exceptional financial returns</b> and <b>positive social impact</b> through disruptive innovation</p>
+                            <img src="assets/img/logo/logo-rocket-white.png" style="padding-bottom:20px;" data-aos="zoom-in" data-aos-delay="200"/>
+                            <h1 class="text-white" data-aos="fade-up" data-aos-delay="400">Technology is our DNA</h1>
+                            <p class="text-white my-4" style="display: inline-block; max-width: 750px;" data-aos="fade-up" data-aos-delay="600">An investment firm committed to <b>exceptional financial returns</b> and <b>positive social impact</b> through <b>disruptive innovation</b></p>
                             <!-- Buttons -->
-                            <div class="button-group">
+                            <div class="button-group" data-aos="fade-up" data-aos-delay="800">
                                 <a href="#about" class="btn btn-bordered-white d-none d-sm-inline-block">About Us</a>
                                 <!-- <a href="#contact" class="btn btn-bordered-white">Contact</a> -->
                             </div>
@@ -172,21 +187,20 @@
         <!-- ***** Welcome Area End ***** -->
 
         <!-- ***** Brand Partner Area Start ***** -->
+        <!--
         <section class="section brand-partner ptb_50">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-12 col-lg-6">
-                        <!-- Section Heading -->
                         <div class="section-heading text-center mb-2" style="padding-top: 50px; padding-left: 15px; padding-right: 15px;">
                             <h2>Technology</h2>
-                            <p class="d-none d-sm-block mt-4">Obtain insider access to <b>high growth technology companies</b> leveraging <b>artificial intelligence</b> and other disruptive innovations to <b>transform emerging markets</b></p>
-                            <p class="d-block d-sm-none mt-4">Obtain insider access to <b>high growth technology companies</b> leveraging <b>artificial intelligence</b> and other disruptive innovations to <b>transform emerging markets</b></p>
+                            <p class="d-none d-sm-block mt-4">Obtain insider access to <b>high growth technology companies</b> leveraging <b>artificial intelligence</b> and other disruptive innovations to <b>transform industries worldwide</b></p>
+                            <p class="d-block d-sm-none mt-4">Obtain insider access to <b>high growth technology companies</b> leveraging <b>artificial intelligence</b> and other disruptive innovations to <b>transform industries worldwide</b></p>
                             <li class="single-partner list-inline-item p-lg-3">
                                 <a href="http://conexo.vc/"><img src="assets/img/conexo_logo.png" alt="Conexo Ventures"></a>
                             </li>
                         </div>
                     </div>
-                    <!--
                     <div class="col-12 col-lg-6">
                         <div class="section-heading text-center mb-2" style="padding-top: 50px; padding-left: 15px; padding-right: 15px;">
                             <h2>Sustainability</h2>
@@ -197,9 +211,7 @@
                             </li>
                         </div>
                     </div>
-                    -->
                 </div>
-                <!--
                 <div class="row justify-content-center">
                     <div class="col-12">
 
@@ -226,13 +238,13 @@
                         </ul>
                     </div>
                 </div>
-                -->
             </div>
         </section>
+        -->
         <!-- ***** Brand Partner Area End ***** -->
 
         <!-- ***** Content Area Start ***** -->
-        <section id="about" class="section content-area bg-grey ptb_150">
+        <section id="about" class="section content-area ptb_150">
             <!-- Shape Top -->
             <div class="shape shape-top">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none" fill="#FFFFFF">
@@ -243,7 +255,7 @@
             </div>
             <div class="container">
                 <div class="row justify-content-between">
-                    <div class="col-12 col-lg-6" style="padding: 15px;">
+                    <div class="col-12 col-lg-6" style="padding: 15px;" data-aos="fade-right">
                         <!-- Content Inner -->
                         <div class="content-inner text-center">
                             <!-- Section Heading -->
@@ -255,16 +267,16 @@
                             <!-- Content List -->
                             <ul class="content-list text-left">
                                 <!-- Single Content List -->
-                                <li class="single-content-list media py-2">
+                                <li class="single-content-list media py-2" data-aos="fade-right" data-aos-delay="100">
                                     <div class="content-icon pr-4">
                                         <span class="color-1"><i class="fas fa-angle-double-right"></i></span>
                                     </div>
                                     <div class="content-text media-body">
-                                        <span><b>Regional Arbitrage</b><br>By focusing in Latin America while leveraging our networks in USA and Europe we maximize the return for our members</span>
+                                        <span><b>Global Reach</b><br>By sourcing deals across the Americas and Europe while leveraging our worldwide networks we maximize the return for our members</span>
                                     </div>
                                 </li>
                                 <!-- Single Content List -->
-                                <li class="single-content-list media py-2">
+                                <li class="single-content-list media py-2" data-aos="fade-right" data-aos-delay="200">
                                     <div class="content-icon pr-4">
                                         <span class="color-1"><i class="fas fa-angle-double-right"></i></span>
                                     </div>
@@ -273,7 +285,7 @@
                                     </div>
                                 </li>
                                 <!-- Single Content List -->
-                                <li class="single-content-list media py-2">
+                                <li class="single-content-list media py-2" data-aos="fade-right" data-aos-delay="300">
                                     <div class="content-icon pr-4">
                                         <span class="color-1"><i class="fas fa-angle-double-right"></i></span>
                                     </div>
@@ -282,10 +294,10 @@
                                     </div>
                                 </li>
                             </ul>
-                            <a href="#contact" class="btn btn-bordered mt-4">Learn More</a>
+                            <a href="#contact" class="btn btn-bordered mt-4" data-aos="fade-up" data-aos-delay="400">Learn More</a>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-6" style="padding: 15px;">
+                    <div class="col-12 col-lg-6" style="padding: 15px;" data-aos="fade-left">
                         <!-- Service Thumb -->
                         <div class="service-thumb mx-auto pt-4 pt-lg-0">
                             <img src="assets/img/content/content_thumb_1.png" alt="For Investors" style="border-radius: 25px;">
@@ -311,10 +323,10 @@
                     <div class="col-12 col-lg-10">
                         <!-- Section Heading -->
                         <div class="section-heading text-center m-0">
-                            <h2 class="text-white">We provide a better way<br/>of investing in technology</h2>
-                            <p class="text-white d-none d-sm-block mt-4">Tired of <b>losing money</b> on immature "angel club" deals or <b>losing control</b> by delegating to a "closed fund"?<br/>At <b>Rapid Scale</b> you can customize your portfolio based on your personal preferences</p>
-                            <p class="text-white d-block d-sm-none mt-4">Tired of <b>losing money</b> on immature "angel club" deals or <b>losing control</b> by delegating to a "closed fund"?</p>
-                            <a href="#contact" class="btn btn-bordered-white mt-4">Contact Us</a>
+                            <h2 class="text-white" data-aos="fade-up">We provide a better way<br/>of investing in technology</h2>
+                            <p class="text-white d-none d-sm-block mt-4" data-aos="fade-up" data-aos-delay="150">Our portfolio has delivered <b>exceptional returns</b> across multiple vintages, consistently outperforming benchmarks through <b>disciplined deal selection</b> and <b>hands-on value creation</b></p>
+                            <p class="text-white d-block d-sm-none mt-4" data-aos="fade-up" data-aos-delay="150">Our portfolio has delivered <b>exceptional returns</b> across multiple vintages, consistently outperforming benchmarks through <b>disciplined deal selection</b></p>
+                            <a href="#contact" class="btn btn-bordered-white mt-4" data-aos="fade-up" data-aos-delay="300">Contact Us</a>
                         </div>
                     </div>
                 </div>
@@ -326,10 +338,10 @@
         <section id="founders" class="section content-area ptb_150">
             <div class="container">
                 <div class="row justify-content-between">
-                    <div class="col-12 col-lg-6" style="padding: 15px;">
+                    <div class="col-12 col-lg-6" style="padding: 15px;" data-aos="fade-right">
                         <img src="assets/img/content/content_thumb_2.png" alt="For Founders" style="border-radius: 25px;">
                     </div>
-                    <div class="col-12 col-lg-6" style="padding: 15px;">
+                    <div class="col-12 col-lg-6" style="padding: 15px;" data-aos="fade-left">
                         <!-- Content Inner -->
                         <div class="content-inner text-center pt-sm-4 pt-lg-0 mt-sm-5 mt-lg-0">
                             <!-- Section Heading -->
@@ -341,7 +353,7 @@
                             <!-- Content List -->
                             <ul class="content-list text-left">
                                 <!-- Single Content List -->
-                                <li class="single-content-list media py-2">
+                                <li class="single-content-list media py-2" data-aos="fade-left" data-aos-delay="100">
                                     <div class="content-icon pr-4">
                                         <span class="color-1"><i class="fas fa-angle-double-right"></i></span>
                                     </div>
@@ -350,7 +362,7 @@
                                     </div>
                                 </li>
                                 <!-- Single Content List -->
-                                <li class="single-content-list media py-2">
+                                <li class="single-content-list media py-2" data-aos="fade-left" data-aos-delay="200">
                                     <div class="content-icon pr-4">
                                         <span class="color-1"><i class="fas fa-angle-double-right"></i></span>
                                     </div>
@@ -359,7 +371,7 @@
                                     </div>
                                 </li>
                                 <!-- Single Content List -->
-                                <li class="single-content-list media py-2">
+                                <li class="single-content-list media py-2" data-aos="fade-left" data-aos-delay="300">
                                     <div class="content-icon pr-4">
                                         <span class="color-1"><i class="fas fa-angle-double-right"></i></span>
                                     </div>
@@ -368,7 +380,7 @@
                                     </div>
                                 </li>
                             </ul>
-                            <a href="#contact" class="btn btn-bordered mt-4">Learn More</a>
+                            <a href="#contact" class="btn btn-bordered mt-4" data-aos="fade-up" data-aos-delay="400">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -390,7 +402,7 @@
                 <div class="row justify-content-center">
                     <div class="col-12 col-md-10 col-lg-8">
                         <!-- Section Heading -->
-                        <div class="section-heading text-center">
+                        <div class="section-heading text-center" data-aos="fade-up">
                             <h2>Portfolio Companies</h2>
                             <p class="d-none d-sm-block mt-4">Rapid Scale and its partners have invested in the following <b>fast-growing ventures</b></p>
                             <p class="d-block d-sm-none mt-4">Rapid Scale and its partners have invested in the following <b>fast-growing ventures</b></p>
@@ -398,7 +410,24 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-12 col-md-6 col-lg-4">
+                    <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="0">
+                        <!-- Single Service -->
+                        <div class="single-service service-gallery overflow-hidden">
+                            <!-- Service Thumb -->
+                            <div class="service-thumb">
+                                <a href="https://www.anthropic.com/"><img src="assets/img/case_studies/case_studies_1/thumb_1.jpg" alt="Anthropic AI"></a>
+                            </div>
+                            <!-- Service Content -->
+                            <div class="service-content bg-white">
+                                <a href="https://www.anthropic.com/">
+                                    <h3>AI Platform</h3>
+                                </a>
+                                <p class="py-3">Anthropic is the creator of <b>Claude</b>, one of the world's most capable and <b>trustworthy AI models</b>, focusing on building safe, reliable and interpretable AI systems.</p>
+                                <a class="service-btn" href="https://www.anthropic.com/">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="100">
                         <!-- Single Service -->
                         <div class="single-service service-gallery overflow-hidden">
                             <!-- Service Thumb -->
@@ -415,24 +444,24 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4">
+                    <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
                         <!-- Single Service -->
                         <div class="single-service service-gallery overflow-hidden">
                             <!-- Service Thumb -->
                             <div class="service-thumb">
-                                <a href="https://kushkipagos.com"><img src="assets/img/case_studies/case_studies_1/thumb_2.jpg" alt="Kushki Pagos"></a>
+                                <a href="https://recursive.com/"><img src="assets/img/case_studies/case_studies_1/thumb_9.jpg" alt="Recursive SuperIntelligence"></a>
                             </div>
                             <!-- Service Content -->
                             <div class="service-content bg-white">
-                                <a href="https://kushkipagos.com">
-                                    <h3>Global Payments</h3>
+                                <a href="https://recursive.com/">
+                                    <h3>Superintelligence</h3>
                                 </a>
-                                <p class="py-3">Kushki is an Ecuatorian <b>unicorn</b> that enables modern, efficient <b>payment solutions</b> all across Latin America with enhanced <b>card acceptance</b> and a <b>single API</b></p>
-                                <a class="service-btn" href="https://techcrunch.com/2022/06/07/ecuadorian-payments-infrastructure-startup-kushki-lands-100m-at-a-1-5b-valuation">Learn More</a>
+                                <p class="py-3">RSI a frontier startup pioneering <b>self-improving AI systems</b> designed to <b>solve humanity's most complex challenges</b> at <b>unprecedented speed</b>.</p>
+                                <a class="service-btn" href="https://recursive.com/">Learn More</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4">
+                    <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="0">
                         <!-- Single Service -->
                         <div class="single-service service-gallery overflow-hidden">
                             <!-- Service Thumb -->
@@ -449,7 +478,24 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4">
+                    <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+                        <!-- Single Service -->
+                        <div class="single-service service-gallery overflow-hidden">
+                            <!-- Service Thumb -->
+                            <div class="service-thumb">
+                                <a href="https://kushkipagos.com"><img src="assets/img/case_studies/case_studies_1/thumb_2.jpg" alt="Kushki Pagos"></a>
+                            </div>
+                            <!-- Service Content -->
+                            <div class="service-content bg-white">
+                                <a href="https://kushkipagos.com">
+                                    <h3>Global Payments</h3>
+                                </a>
+                                <p class="py-3">Kushki is an Ecuatorian <b>unicorn</b> that enables modern, efficient <b>payment solutions</b> all across Latin America with enhanced <b>card acceptance</b> and a <b>single API</b></p>
+                                <a class="service-btn" href="https://techcrunch.com/2022/06/07/ecuadorian-payments-infrastructure-startup-kushki-lands-100m-at-a-1-5b-valuation">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
                         <!-- Single Service -->
                         <div class="single-service service-gallery overflow-hidden">
                             <!-- Service Thumb -->
@@ -466,7 +512,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4">
+                    <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="0">
                         <!-- Single Service -->
                         <div class="single-service service-gallery overflow-hidden">
                             <!-- Service Thumb -->
@@ -483,7 +529,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4">
+                    <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="100">
                         <!-- Single Service -->
                         <div class="single-service service-gallery overflow-hidden">
                             <!-- Service Thumb -->
@@ -500,24 +546,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <!-- Single Service -->
-                        <div class="single-service service-gallery overflow-hidden">
-                            <!-- Service Thumb -->
-                            <div class="service-thumb">
-                                <a href="https://enthec.com"><img src="assets/img/case_studies/case_studies_1/thumb_1.jpg" alt=""></a>
-                            </div>
-                            <!-- Service Content -->
-                            <div class="service-content bg-white">
-                                <a href="https://enthec.com">
-                                    <h3>AI for Cybersecurity</h3>
-                                </a>
-                                <p class="py-3">Enthec is a <b>preventive cyber-intelligence platform</b> that warns and protects companies and individuals <b>before an attack actually happens</b></p>
-                                <a class="service-btn" href="https://enthec.com">Learn More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4">
+                    <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
                         <!-- Single Service -->
                         <div class="single-service service-gallery overflow-hidden">
                             <!-- Service Thumb -->
@@ -531,23 +560,6 @@
                                 </a>
                                 <p class="py-3">Clivi is Mexico's leading <b>digital clinic</b> that transforms the health care experience for <b>chronic diseases</b>, offering <b>comprehensive treatment</b> driven by technology</p>
                                 <a class="service-btn" href="https://www.clivi.com.mx">Learn More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <!-- Single Service -->
-                        <div class="single-service service-gallery overflow-hidden">
-                            <!-- Service Thumb -->
-                            <div class="service-thumb">
-                                <a href="https://www.buildpeer.com/"><img src="assets/img/case_studies/case_studies_1/thumb_9.jpg" alt="Construction AI"></a>
-                            </div>
-                            <!-- Service Content -->
-                            <div class="service-content bg-white">
-                                <a href="https://www.buildpeer.com/">
-                                    <h3>AI for Construction</h3>
-                                </a>
-                                <p class="py-3">Buildpeer is a <b>construction management software</b> tailored for LATAM and loaded with <b>AI features</b> that <b>enhance collaboration</b> and information sharing in real time</p>
-                                <a class="service-btn" href="https://www.buildpeer.com/">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -575,76 +587,38 @@
         <!--====== Contact Area Start ======-->
         <section id="contact" class="contact-area ptb_100">
             <div class="container">
-                <div class="row justify-content-between align-items-center">
-                    <div class="col-12 col-lg-5">
-                        <!-- Section Heading -->
-                        <div class="section-heading text-center mb-3">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-7" data-aos="fade-up">
+                        <div class="section-heading text-center mb-4">
                             <h2>Contact</h2>
                             <p class="d-none d-sm-block mt-4">Are you are a <b>founder</b> searching <b>smart capital</b> for your startup?
                                 Or an <b>investor</b> looking for <b>high growth</b> deals?
-                                Let's explore how we can work together<br/>&nbsp;</p>
+                                Let's explore how we can work together</p>
                             <p class="d-block d-sm-none mt-4">Drop us a line and let's explore how we can work together</p>
                         </div>
-                        <!-- Contact Us -->
-                        <div class="contact-us">
-                            <ul>
-                                <!-- Contact Info -->
-                                <!--
-                                <li class="contact-info color-3 bg-hover active hover-bottom text-center p-5 m-3">
-                                    <span><i class="fas fa-mobile-alt fa-3x"></i></span>
-                                    <a class="d-block my-2" href="#">
-                                        <h3>phone num</h3>
-                                    </a>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                </li>
-                                -->
-                                <!-- Contact Info -->
-                                <li class="contact-info color-1 bg-hover active hover-bottom text-center p-5 m-3">
-                                    <span><i class="fas fa-envelope-open-text fa-3x"></i></span>
-                                    <a class="d-none d-sm-block my-2" href="#">
-                                        <h3>info&#64;rapidscale.vc</h3>
-                                    </a>
-                                    <a class="d-block d-sm-none my-2" href="#">
-                                        <h3>info&#64;rapidscale.vc</h3>
-                                    </a>
-                                    <p>We will reply as soon as possible</p>
-                                </li>
-                            </ul>
-                        </div>
                     </div>
-                    <div class="col-12 col-lg-6 pt-4 pt-lg-0">
-                        <!-- Contact Box -->
-                        <div class="contact-box text-center">
-                            <img src="assets/img/content/content_thumb.png" alt="Contact Us" style="border-radius: 25px;">
-                            <!-- Contact Form (ALERT trailing slash!) -->
-                            <!--
-                            <form id="ajax-contact" method="POST" action="https://algonaut.herokuapp.com/rapid-mail/"
-                                  msg-sending="Sending the message. One moment."
-                                  msg-success="Message sent! Will reply shortly."
-                                  msg-failure="Message not sent. Please try again."
-                                  msg-error="There was an error and the message could not be sent.">
-                                <input type="hidden" name="token" id="token"/>
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" name="name" id="name" placeholder="Name" required="required">
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="email" class="form-control" name="email" id="email" placeholder="Email" required="required">
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <textarea class="form-control" name="message" id="message" placeholder="Message" required="required"></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <button type="submit" class="btn btn-bordered active btn-block mt-3"><span class="text-white pr-3"><i class="fas fa-paper-plane"></i></span>Send Message</button>
-                                    </div>
-                                </div>
-                            </form>
-                            -->
-                        </div>
+                </div>
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-12 col-lg-5" data-aos="fade-right">
+                        <img src="assets/img/content/content_thumb.png" alt="Contact Us" style="border-radius: 25px; width: 100%;">
+                    </div>
+                    <div class="col-12 col-lg-6 pt-4 pt-lg-0" data-aos="fade-left">
+                        <!-- Contact Form -->
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="name" placeholder="Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" name="email" placeholder="Email" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-bordered active btn-block mt-3">
+                                <span class="text-white pr-3"><i class="fas fa-paper-plane"></i></span>Send Message
+                            </button>
+                            <p id="form-status" class="mt-3 text-center" style="display:none;"></p>
+                        </form>
                     </div>
                 </div>
                 <div id="form-messages" class="mt-3"></div>
@@ -839,10 +813,6 @@
     <!-- Active js -->
     <script src="assets/js/active.js"></script>
 
-    <!-- Form js -->
-    <script id="capt" src="https://www.google.com/recaptcha/api.js?render=6LeXSoomAAAAAMUViqOsxvu4Er3XukyU1Am4-jC0"></script>
-    <script src="assets/js/form.js"></script>
-
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-WBFX5CQEK0"></script>
     <script>
@@ -855,6 +825,41 @@
 
     <!-- Mailchimp pop-up form -->
     <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/3d32713e1eb9aa77d0c48999d/f82d8ccbad7903e3abc4e3236.js");</script>
+
+    <!-- Formspree contact form -->
+    <script>
+        (function () {
+            var form = document.getElementById('contact-form');
+            var status = document.getElementById('form-status');
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+                var btn = form.querySelector('button[type="submit"]');
+                btn.disabled = true;
+                btn.innerHTML = '<span class="text-white pr-3"><i class="fas fa-spinner fa-spin"></i></span>Sending…';
+                fetch('https://formspree.io/f/maqvbejq', {
+                    method: 'POST',
+                    body: new FormData(form),
+                    headers: { 'Accept': 'application/json' }
+                }).then(function (res) {
+                    if (res.ok) {
+                        form.reset();
+                        status.style.display = 'block';
+                        status.style.color = '#28a745';
+                        status.textContent = 'Message sent! We will reply as soon as possible.';
+                        btn.style.display = 'none';
+                    } else {
+                        return res.json().then(function (data) { throw data; });
+                    }
+                }).catch(function () {
+                    status.style.display = 'block';
+                    status.style.color = '#dc3545';
+                    status.textContent = 'Something went wrong. Please email us at info@rapidscale.vc';
+                    btn.disabled = false;
+                    btn.innerHTML = '<span class="text-white pr-3"><i class="fas fa-paper-plane"></i></span>Send Message';
+                });
+            });
+        })();
+    </script>
 
     <!-- Cookies banner -->
 
